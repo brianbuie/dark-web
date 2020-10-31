@@ -1,0 +1,24 @@
+{
+  "name": "chrome-extension-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node scripts/prebuild.js && webpack-dev-server --config webpack.dev.js",
+    "build": "NODE_ENV=production node scripts/prebuild.js && webpack --config webpack.prod.js"
+  },
+  "devDependencies": {
+    "archiver": "^3.0.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "chalk": "^2.4.2",
+    "content-security-policy-builder": "^2.0.0",
+    "shelljs": "^0.8.3",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.0",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {}
+}
